@@ -1,4 +1,4 @@
-# Digitale Post Komponent
+# Digital Post Komponent
 Github repository som dokumenterer opsætningen af den digitale post komponent.
 
 ## Projekt Arkitektur
