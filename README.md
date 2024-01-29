@@ -12,6 +12,8 @@ Github repository som dokumenterer opsætningen af den digitale post komponent.
 - [Strålfors-Dispatcher-Service](https://github.com/trifork/dpk-docs): Service som sender et brev til Strålfors til fysisk forsendelse
 - [Enrollment-Service](https://github.com/trifork/dpk-docs) - (Cron/Batch) Service som vedligholder en liste af personer tilmeldt digital post
 - [Receipt-Service](https://github.com/trifork/dpk-docs) - (Cron/Batch) Service som indhenter kvitteringer fra Digital Post / Strålfors
+- [Common-Submodule](https://github.com/trifork/dpk-docs) - Github submodul med indhold som skal bruges af to eller flere services
+- [Flux](https://github.com/trifork/dpk-docs) - TCS dev/test repository
 
 ## Udviklingsprocess
 
