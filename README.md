@@ -17,6 +17,10 @@ Github repository som dokumenterer opsætningen af den digitale post komponent.
 
 ## Udviklingsprocess
 
+## Database
+Der arbejdes med en Postgres (Forhåbentligt) database i alle miljøer (Forhåbentligt) med følgende ER diagram:
+![dpk_db.png not found!](assets/dpk_db.png "ER Diagram")
+
 ## Opstart af komponent
 ### Docker
 TODO: direkte kørsel af `docker-compose`
