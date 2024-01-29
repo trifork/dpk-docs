@@ -15,12 +15,49 @@ Github repository som dokumenterer opsætningen af den digitale post komponent.
 - [Common-Submodule](https://github.com/trifork/dpk-docs) - Github submodul med indhold som skal bruges af to eller flere services
 - [Flux](https://github.com/trifork/dpk-docs) - TCS dev/test repository
 
-## Udviklingsprocess
+## Snitflade
+Følgende snitflade funktioner kan kaldes hvoraf data forventes at være i json format:
+
+> # /api/v1/sendPDF
+>
+> *Påbegynder udsendelse af en PDF til de angivne modtagere*
+> | Query Parameter             | Beskrivelse                                                                         | Obligatorisk |
+> |-----------------------------|-------------------------------------------------------------------------------------|:------------:|
+> | recipientList               | Liste af modtagere                                                                  | X            |
+> | templateDigital             | PDF template til digital forsendelse                                                | X            |
+> | templatePhysical            | PDF template til fysisk forsendelse, ved udeladelse kan der kun sendes digital post |              |
+> | templateSubstitutionValues  | Key-Value mapning til substituering af generiske værdier i et PDF template          |              |
+>
+> *Eksempel på Json:*
+> ```json
+> {
+>  "recipientList": [
+>   {
+>    "uuid": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+>    "identifier": "1111111118",
+>    "identifierSource": "CPR",
+>    "name": "Jens Jensen",
+>    "address": "Jensenvej 11, 8000",
+>    "city": "Testby",
+>    "substitutionValues": {
+>     "age": "31"    
+>    }
+>   }
+>  ],
+>  "templateDigital": "Genoplivning_paamindelse_2024q4_digital",
+>  "templatePhysical": "Genoplivning_paamindelse_2024q4_fysisk",
+>  "templateSubstitutionValues": {
+>   "date": "2023-01-29"    
+>  } 
+> }
+> ```
 
 ## Database
 Der arbejdes med en Postgres (Forhåbentligt) database i alle miljøer (Forhåbentligt) med følgende ER diagram:
 ![dpk_db.png not found!](assets/dpk_db.png "ER Diagram")
 
+## Udviklingsprocess
+
 ## Opstart af komponent
 ### Docker
-TODO: direkte kørsel af `docker-compose`
+TODO: direkte kørsel af `docker-compose` ?
