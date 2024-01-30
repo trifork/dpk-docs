@@ -59,7 +59,17 @@ Følgende snitflade funktioner kan kaldes hvoraf data forventes at være i json 
 >  } 
 > }
 > ```
-> *Hvoraf uuid er messageId for den enkelte forsendelse*
+> *Hvoraf `uuid` er messageId for den enkelte forsendelse. `identifierSource` kan udelades, med antagelse om at der er tale om CPR. `substitutionValues` kan udelades.*
+>
+> Kaldet kvitteres med følgende json struktur
+> ```json
+> {
+>  "request_id": "UUID som identificerer requestet",
+>  "status": "OK/Error",
+>  "error_code": "Fejlkode, hvis der opstod en fejl",
+>  "error_description": "Beskrivelse af fejlen, hvis der opstod en fejl"
+> }
+> ```
 
 ## Database
 Der arbejdes med en Postgres (Forhåbentligt) database i alle miljøer (Forhåbentligt) med følgende ER diagram:
