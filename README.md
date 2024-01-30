@@ -59,6 +59,7 @@ Følgende snitflade funktioner kan kaldes hvoraf data forventes at være i json 
 >  } 
 > }
 > ```
+> *Hvoraf uuid er messageId for den enkelte forsendelse*
 
 ## Database
 Der arbejdes med en Postgres (Forhåbentligt) database i alle miljøer (Forhåbentligt) med følgende ER diagram:
