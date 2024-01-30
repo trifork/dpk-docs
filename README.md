@@ -29,12 +29,13 @@ Følgende snitflade funktioner kan kaldes hvoraf data forventes at være i json 
 > # /api/v1/sendPDF
 >
 > *Påbegynder udsendelse af en PDF til de angivne modtagere*
-> | Query Parameter             | Beskrivelse                                                                         | Obligatorisk |
-> |-----------------------------|-------------------------------------------------------------------------------------|:------------:|
-> | recipientList               | Liste af modtagere                                                                  | X            |
-> | templateDigital             | PDF template til digital forsendelse                                                | X            |
-> | templatePhysical            | PDF template til fysisk forsendelse, ved udeladelse kan der kun sendes digital post |              |
-> | templateSubstitutionValues  | Key-Value mapning til substituering af generiske værdier i et PDF template          |              |
+> | Query Parameter             | Beskrivelse                                                                                                                               | Obligatorisk |
+> |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|:------------:|
+> | recipientList               | Liste af modtagere                                                                                                                        | X            |
+> | templateDigital             | PDF template til digital forsendelse                                                                                                      | X            |
+> | templatePhysical            | PDF template til fysisk forsendelse, ved udeladelse sendes der kun digital post                                                           |              |
+> | templateSubstitutionValues  | Key-Value mapning til substituering af generiske værdier i et PDF template                                                                |              |
+> | sendDate                    | (Fremtidig) dato hvor servicen skal begynde at sende post fra, ved udeladelse begynder servicen at sende snarest muligt                   |              |
 >
 > *Eksempel på Json:*
 > ```json
