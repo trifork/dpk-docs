@@ -13,7 +13,7 @@ Github repository som dokumenterer opsætningen af den digitale post komponent.
   - Java/Kotlin Service?
 - [Strålfors-Dispatcher-Service](https://github.com/trifork/dpk-docs): Service som får skabt et PDF brev og sender det brev til Strålfors til fysisk forsendelse
   - Java Service 
-- [Digital-Post-Services](https://github.com/trifork/dpk-docs): Service som får skabt et digitalt brev og sender brevet til eboks/digital post til digital forsendelse
+- [Digital-Post-Services](https://github.com/trifork/dpk-docs): Repository som samler services der skal interagere med Digital Post
   - [Digital-Post-Dispatcher-Service](https://github.com/trifork/dpk-docs): Service som får skabt et digitalt brev og sender brevet til Digital Post til digital forsendelse
     - Java Service 
   - [Enrollment-Service](https://github.com/trifork/dpk-docs) - (Cron/Batch) Service som vedligholder liste af personer tilmeldt digital post
