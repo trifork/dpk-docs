@@ -6,13 +6,21 @@ Github repository som dokumenterer opsætningen af den digitale post komponent.
 
 ## DPK-Projekter
 - [REST-Service](https://github.com/trifork/dpk-docs): Service som udstiller den offentlige snitflade til udsendelse af post
+  - Go Service?
 - [PDF-Service](https://github.com/trifork/dpk-docs): Service som skaber PDF til afsending ud fra et template og data fra snitflade/dispatcher
+  - Java/Kotlin Service?
 - [Dispatcher-Service](https://github.com/trifork/dpk-docs): (Cron/Batch) Service som delegerer viderere til "subservices" der enten sender til digital post eller fysisk post
-- [Eboks-Dispatcher-Service](https://github.com/trifork/dpk-docs): Service som sender et brev til eboks/digital post til digital forsendelse
-- [Strålfors-Dispatcher-Service](https://github.com/trifork/dpk-docs): Service som sender et brev til Strålfors til fysisk forsendelse
-- [Enrollment-Service](https://github.com/trifork/dpk-docs) - (Cron/Batch) Service som vedligholder en liste af personer tilmeldt digital post
+  - Java/Kotlin Service? 
+- [Eboks-Dispatcher-Service](https://github.com/trifork/dpk-docs): Service som generer og sender et brev til eboks/digital post til digital forsendelse
+  - Java Service 
+- [Strålfors-Dispatcher-Service](https://github.com/trifork/dpk-docs): Service som generer og sender et brev til Strålfors til fysisk forsendelse
+  - Java Service
+- [Enrollment-Service](https://github.com/trifork/dpk-docs) - (Cron/Batch) Service som vedligholder liste af personer tilmeldt digital post
+  - Java Service: Kopi/opgradering af tilsvarende [Bulk-Notify service](https://github.com/trifork/bulk-notification/tree/master/poll-eboks-enrollment-lists)
 - [Receipt-Service](https://github.com/trifork/dpk-docs) - (Cron/Batch) Service som indhenter kvitteringer fra Digital Post / Strålfors
+  - Java Service: Kopi/opgradering af tilsvarende [Bulk-Notify service](https://github.com/trifork/bulk-notification/tree/master/poll-eboks-acknowledgements)
 - [Common-Submodule](https://github.com/trifork/dpk-docs) - Github submodul med indhold som skal bruges af to eller flere services
+  - Protobuf, SQL
 - [Flux](https://github.com/trifork/dpk-docs) - TCS dev/test repository
 
 ## Snitflade
