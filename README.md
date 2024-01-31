@@ -5,7 +5,7 @@ Github repository som dokumenterer opsætningen af den digitale post komponent.
 [![](https://mermaid.ink/img/pako:eNqNU8tOwzAQ_BXLJ5Dq9p4DUkv6ACpRxbk5PSzJprHqOJGzASHE5_Al_BhuoTSFtqpPzu7saGbWeeNplSEPuBAisbEmgwEL9UoTGLaoGmIPVVlXFi0ldovJTfWSFuCIzaPEMn-GKnaQ5zpdfn837dPKQV2c5GE_Z6SisYyZRPesU1wKwe7D0S0T4mYzsXLY7LG3KtRNDZQW6P5OHB_wzWm02NKN1YGUPdPyOH6iJLnPD5NXrjmODtUinPzq2NfHHZZwX54cL0_V2LrKmBLpshRmKsIUdX0hfFdRV7sbC4HgCRq8_hGNNjuztY7hu6mMD2OUVlNuIDv032ezOF5I1vdONzMdt2d6sxO9__L8ZgC2m-nG25mWcTQcziePkexs8a_boQ-MFUR1EwwG2bcrUXtXYr17p_1sPdjEyka8x0t0JejM_yhvG4KEU4ElJjzw1wxzaA0lPLHvHgotVfLVpjwg12KPt3UGhKEGr7_kQQ6mwfcv6foMHw?type=png)](https://mermaid.live/edit#pako:eNqNU8tOwzAQ_BXLJ5Dq9p4DUkv6ACpRxbk5PSzJprHqOJGzASHE5_Al_BhuoTSFtqpPzu7saGbWeeNplSEPuBAisbEmgwEL9UoTGLaoGmIPVVlXFi0ldovJTfWSFuCIzaPEMn-GKnaQ5zpdfn837dPKQV2c5GE_Z6SisYyZRPesU1wKwe7D0S0T4mYzsXLY7LG3KtRNDZQW6P5OHB_wzWm02NKN1YGUPdPyOH6iJLnPD5NXrjmODtUinPzq2NfHHZZwX54cL0_V2LrKmBLpshRmKsIUdX0hfFdRV7sbC4HgCRq8_hGNNjuztY7hu6mMD2OUVlNuIDv032ezOF5I1vdONzMdt2d6sxO9__L8ZgC2m-nG25mWcTQcziePkexs8a_boQ-MFUR1EwwG2bcrUXtXYr17p_1sPdjEyka8x0t0JejM_yhvG4KEU4ElJjzw1wxzaA0lPLHvHgotVfLVpjwg12KPt3UGhKEGr7_kQQ6mwfcv6foMHw)
 
 ## DPK-Projekter
-- [REST-Service](https://github.com/trifork/dpk-docs): Service som udstiller den offentlige snitflade til udsendelse af post
+- [REST-Service](https://github.com/trifork/dpk-rest-service): Service som udstiller den offentlige snitflade til udsendelse af post
   - Go Service?
 - [PDF-Service](https://github.com/trifork/dpk-docs): Service som skaber PDF til afsending ud fra et template og data fra snitflade/dispatcher
   - Java/Kotlin Service?
