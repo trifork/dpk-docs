@@ -8,7 +8,7 @@ Github repository som dokumenterer opsætningen af den digitale post komponent.
 - [REST-Service](https://github.com/trifork/dpk-rest-service): Service som udstiller den offentlige snitflade til udsendelse af post
   - Go Service?
 - [PDF-Service](https://github.com/trifork/dpk-pdf-service): Service som skaber PDF til afsending ud fra et template og data fra snitflade/dispatcher
-  - Java/Kotlin Service?
+  - Java Service
 - [Dispatcher-Service](https://github.com/trifork/dpk-docs): (Cron/Batch) Service som delegerer viderere til "subservices" der enten sender til digital post eller fysisk post
   - Java/Kotlin Service?
 - [Strålfors-Dispatcher-Service](https://github.com/trifork/dpk-docs): Service som får skabt et PDF brev og sender det brev til Strålfors til fysisk forsendelse
