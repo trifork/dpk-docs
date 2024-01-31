@@ -20,7 +20,7 @@ Github repository som dokumenterer opsætningen af den digitale post komponent.
     - Java Service: Kopi/opgradering af tilsvarende [Bulk-Notify service](https://github.com/trifork/bulk-notification/tree/master/poll-eboks-enrollment-lists)
   - [Receipt-Service](https://github.com/trifork/dpk-docs) - (Cron/Batch) Service som indhenter kvitteringer fra Digital Post / Strålfors
     - Java Service: Kopi/opgradering af tilsvarende [Bulk-Notify service](https://github.com/trifork/bulk-notification/tree/master/poll-eboks-acknowledgements)
-- [Common-Submodule](https://github.com/trifork/dpk-docs) - Github submodul med indhold som skal bruges af to eller flere services
+- [Common-Submodule](https://github.com/trifork/dpk-common-submodule) - Github submodul med indhold som skal bruges af to eller flere services
   - Protobuf, SQL
 - [Flux](https://github.com/trifork/dpk-docs) - TCS dev/test repository
 
