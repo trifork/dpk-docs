@@ -13,12 +13,12 @@ Github repository som dokumenterer opsætningen af den digitale post komponent.
   - Java/Kotlin Service?
 - [Strålfors-Dispatcher-Service](https://github.com/trifork/dpk-docs): Service som får skabt et PDF brev og sender det brev til Strålfors til fysisk forsendelse
   - Java Service 
-- [Digital-Post-Services](https://github.com/trifork/dpk-docs): Repository som samler services der skal interagere med Digital Post
-  - [Digital-Post-Dispatcher-Service](https://github.com/trifork/dpk-docs): Service som får skabt et digitalt brev og sender brevet til Digital Post til digital forsendelse
+- [Digital-Post-Services](https://github.com/trifork/dpk-digital-post): Repository som samler services der skal interagere med Digital Post
+  - [Digital-Post-Dispatcher-Service](https://github.com/trifork/dpk-digital-post): Service som får skabt et digitalt brev og sender brevet til Digital Post til digital forsendelse
     - Java Service 
-  - [Enrollment-Service](https://github.com/trifork/dpk-docs) - (Cron/Batch) Service som vedligholder liste af personer tilmeldt digital post
+  - [Enrollment-Service](https://github.com/trifork/dpk-digital-post) - (Cron/Batch) Service som vedligholder liste af personer tilmeldt digital post
     - Java Service: Kopi/opgradering af tilsvarende [Bulk-Notify service](https://github.com/trifork/bulk-notification/tree/master/poll-eboks-enrollment-lists)
-  - [Receipt-Service](https://github.com/trifork/dpk-docs) - (Cron/Batch) Service som indhenter kvitteringer fra Digital Post / Strålfors
+  - [Receipt-Service](https://github.com/trifork/dpk-digital-post) - (Cron/Batch) Service som indhenter kvitteringer fra Digital Post / Strålfors
     - Java Service: Kopi/opgradering af tilsvarende [Bulk-Notify service](https://github.com/trifork/bulk-notification/tree/master/poll-eboks-acknowledgements)
 - [Common-Submodule](https://github.com/trifork/dpk-common-submodule) - Github submodul med indhold som skal bruges af to eller flere services
   - Protobuf, SQL
