@@ -6,11 +6,11 @@ Github repository som dokumenterer opsætningen af den digitale post komponent.
 
 ## DPK-Projekter
 - [REST-Service](https://github.com/trifork/dpk-rest-service): Service som udstiller den offentlige snitflade til udsendelse af post
-  - Go Service?
+  - Go Service
 - [PDF-Service](https://github.com/trifork/dpk-pdf-service): Service som skaber PDF til afsending ud fra et template og data fra snitflade/dispatcher
   - Java Service
 - [Dispatcher-Service](https://github.com/trifork/dpk-docs): (Cron/Batch) Service som finder ud af hvilke breve der skal sendes og delegerer viderere til "subservices" der enten sender til digital post eller fysisk post
-  - Java/Kotlin Service?
+  - Kotlin Service
 - [Strålfors-Dispatcher-Service](https://github.com/trifork/dpk-straalfors): Service som får skabt et PDF brev og sender det brev til Strålfors til fysisk forsendelse
   - Java Service 
 - [Digital-Post-Services](https://github.com/trifork/dpk-digital-post): Repository som samler services der skal interagere med Digital Post
@@ -27,9 +27,9 @@ Github repository som dokumenterer opsætningen af den digitale post komponent.
 ## Teknologi-Stak
 * **Git** for source control, and **Github** as source repository
 * **Github Workflow** for continuous integration
-* **Java 21**, (**Kotlin** and **Go 1.22**) as programming language(s)
+* **Java 21**, **Kotlin** and **Go 1.22** as programming language(s)
 * **Maven** for building the Java/Kotlin services
-* (**Makefile** for easy scripting of Go build and run targets)
+* **Makefile** for easy scripting of Go build and run targets
 * **Docker** for containerization
 * **Github Container Registry** as docker image repository
 * **PostgresDB** for persistence
