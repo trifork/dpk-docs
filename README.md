@@ -6,28 +6,21 @@ Github repository som dokumenterer opsætningen af den digitale post komponent.
 
 ## DPK-Projekter
 - [REST-Service](https://github.com/trifork/dpk-rest-service): Service som udstiller den offentlige snitflade til udsendelse af post
-  - Go Service
 - [PDF-Service](https://github.com/trifork/dpk-pdf-service): Service som skaber PDF til afsending ud fra et template og data fra snitflade/dispatcher
-  - Java Service
 - [Dispatcher-Service](https://github.com/trifork/dpk-docs): (Cron/Batch) Service som finder ud af hvilke breve der skal sendes og delegerer viderere til "subservices" der enten sender til digital post eller fysisk post
-  - Kotlin Service
 - [Strålfors-Dispatcher-Service](https://github.com/trifork/dpk-straalfors): Service som får skabt et PDF brev og sender det brev til Strålfors til fysisk forsendelse
-  - Java Service 
 - [Digital-Post-Services](https://github.com/trifork/dpk-digital-post): Repository som samler services der skal interagere med Digital Post
   - [Digital-Post-Dispatcher-Service](https://github.com/trifork/dpk-digital-post): Service som får skabt et digitalt brev og sender brevet til Digital Post til digital forsendelse
-    - Java Service 
   - [Enrollment-Service](https://github.com/trifork/dpk-digital-post) - (Cron/Batch) Service som vedligholder liste af personer tilmeldt digital post
-    - Java Service: Kopi/opgradering af tilsvarende [Bulk-Notify service](https://github.com/trifork/bulk-notification/tree/master/poll-eboks-enrollment-lists)
   - [Receipt-Service](https://github.com/trifork/dpk-digital-post) - (Cron/Batch) Service som indhenter kvitteringer fra Digital Post / Strålfors
-    - Java Service: Kopi/opgradering af tilsvarende [Bulk-Notify service](https://github.com/trifork/bulk-notification/tree/master/poll-eboks-acknowledgements)
 - [Common-Submodule](https://github.com/trifork/dpk-common-submodule) - Github submodul med indhold som skal bruges af to eller flere services
-  - Protobuf, SQL
 - [Flux](https://github.com/trifork/dpk-docs) - TCS dev/test repository
+- [Docker](https://github.com/trifork/dpk-docker) - Repository hosting a docker-compose setup
 
 ## Teknologi-Stak
 * **Git** for source control, and **Github** as source repository
 * **Github Workflow** for continuous integration
-* **Java 21**, **Kotlin** and **Go 1.22** as programming language(s)
+* **Java 21**, **Kotlin 1.9.22** and **Go 1.22** as programming language
 * **Maven** for building the Java/Kotlin services
 * **Makefile** for easy scripting of Go build and run targets
 * **Docker** for containerization
@@ -79,12 +72,14 @@ Følgende snitflade funktioner kan kaldes hvoraf data forventes at være i json 
 >
 > Kaldet kvitteres med følgende json struktur
 > ```json
-> {
->  "request_id": "UUID som identificerer requestet",
->  "status": "OK/Error",
->  "error_code": "Fejlkode, hvis der opstod en fejl",
->  "error_description": "Beskrivelse af fejlen, hvis der opstod en fejl"
-> }
+> [
+>  {
+>   "message_id": "UUID som identificerer requestet",
+>   "status": "OK/Error",
+>   "error_code": "Fejlkode, hvis der opstod en fejl",
+>   "error_description": "Beskrivelse af fejlen, hvis der opstod en fejl"
+>  }
+> ]
 > ```
 
 ## Database
