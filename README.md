@@ -96,7 +96,7 @@ An overview and status of the workflow runs can be viewed in the `Actions` tab o
 
 ## Continuous deployment
 
-We take advantage of the ideas behind [GitOps](https://www.gitops.tech/) for working with CI/CD in the CTR project. 
+We take advantage of the ideas behind [GitOps](https://www.gitops.tech/) for working with CI/CD in the DPK project. 
 
 We use Github Actions and have added a workflow for continuous deployment. So when a new release has been created (manually, from Github Releases) of a given repository, it triggers the Github action for build and deployment of the service.
 
