@@ -39,7 +39,7 @@ The following endpoints are available through the API:
 > *Starts sending PDFs to the specified recipients*
 > | Query Parameter             | Description                                                                                                                               | Mandatory    |
 > |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|:------------:|
-> | recipientList               | Liste af modtagere                                                                                                                        | X            |
+> | recipientList               | List of recipients                                                                                                                        | X            |
 > | templateDigital             | Template name for digital letters                                                                                                         | X            |
 > | templatePhysical            | Template name for physical letters, can be kept empty to disallow physical letters                                                        |              |
 > | templateSubstitutionValues  | Key-Value mapping for substituting generic values in the template                                                                         |              |
