@@ -114,4 +114,4 @@ We use Github actions for managing workflows in the DPK project. This means that
 
 Navigate to the `Releases` section in the Code tab of your Github repo (in the right hand side of the page) and press the `Draft a new release` button. Create a new tag, for example v0.0.7 and add a title for your release, for example `Release v0.0.7`.
 
-Check the check-box `This is a pre-release`, if this is a pre-release version, and then press the `Publish release` button. A release should be marked as pre-release if it's not production ready (or not expected to be deployed to production).
+Check the check-box `This is a pre-release`, if this is a pre-release version, and then press the `Publish release` button. A release should be marked as pre-release if it's not production ready (or not intended to be deployed directly to production).
