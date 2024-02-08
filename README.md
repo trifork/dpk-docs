@@ -68,7 +68,7 @@ The following endpoints are available through the API:
 >  } 
 > }
 > ```
-> *identifierSource` is not required and assumed to be CPR if not specified. `substitutionValues` is not a mandatory value.*
+> *`identifierSource` is not required and assumed to be CPR if not specified. `substitutionValues` is not a mandatory value.*
 >
 > The service returns the following response
 > ```json
