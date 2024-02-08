@@ -7,7 +7,7 @@ Github repository hosting the setup for the Digital Post Komponent.
 ## DPK-Projects
 - [REST-Service](https://github.com/trifork/dpk-rest-service): Service implementing the REST API that calling systems will use to send post
 - [PDF-Service](https://github.com/trifork/dpk-pdf-service): Service responsible for creating PDFs to be sent to Digital Post or Strålfors based on a template
-- [Dispatcher-Service](https://github.com/trifork/dpk-docs): (Cron/Batch) Service responsible for figuring out which letters to send and which specific dispatcher service should send it. Also handles some sub-dispatcher errors
+- [Dispatcher-Service](https://github.com/trifork/dpk-dispatcher): (Cron/Batch) Service responsible for figuring out which letters to send and which specific dispatcher service should send it. Also handles some sub-dispatcher errors
 - [Strålfors-Dispatcher-Service](https://github.com/trifork/dpk-straalfors): Service responsible for having PDFs generated for a physical letter and sending it to Strålfors
 - [Digital-Post-Services](https://github.com/trifork/dpk-digital-post): Github repository containing all relevant Digital Post services
   - [Digital-Post-Dispatcher-Service](https://github.com/trifork/dpk-digital-post): Service responsible for having PDFs generated for digital post and sending it to Digital Post
