@@ -83,7 +83,7 @@ The following endpoints are available through the API:
 > ```
 
 ## Database
-We're working with a single Postgres database for all environments (local, dev, test, and prod) with the following ER diagram:
+We're working with a Postgres database in every environment (local, dev, test, and prod) with the following ER diagram:
 ![dpk_db.png not found!](assets/dpk_db.png "ER Diagram")
 
 ## Continuous integration
