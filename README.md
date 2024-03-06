@@ -32,61 +32,6 @@ Github repository hosting the setup for the Digital Post Komponent.
 * **Kubernetes** as the infrastructure environment (hosted at Netic)
 * **kubectl** CLI for accessing the Kubernetes cluster and viewing logs
 
-## API
-The following endpoints are available through the API:
-
-> # /api/v1/sendPDF
->
-> *Starts sending PDFs to the specified recipients*
-> | Query Parameter             | Description                                                                                                                               | Mandatory    |
-> |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|:------------:|
-> | recipientList               | List of recipients                                                                                                                        | X            |
-> | templateDigital             | Template name for digital letters                                                                                                         | X            |
-> | templatePhysical            | Template name for physical letters, can be kept empty to disallow physical letters                                                        |              |
-> | templateSubstitutionValues  | Key-Value mapping for substituting generic values in the template                                                                         |              |
-> | sendDate                    | (Future) date where the service should being sending the post from, if not specified the service will send as soon as possible            |              |
->
-> *Json example of a request*
-> ```json
-> {
->  "recipientList": [
->   {
->    "messageId": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
->    "identifier": "1111111118",
->    "identifierSource": "CPR",
->    "name": "Jens Jensen",
->    "address": "Jensenvej 11, 8000",
->    "city": "Testby",
->    "substitutionValues": {
->     "age": "31"    
->    }
->   }
->  ],
->  "templateDigital": "Genoplivning_paamindelse_2024q4_digital",
->  "templatePhysical": "Genoplivning_paamindelse_2024q4_fysisk",
->  "templateSubstitutionValues": {
->   "date": "2023-01-29"    
->  } 
-> }
-> ```
-> *`identifierSource` is not required and assumed to be CPR if not specified. `substitutionValues` is not a mandatory value.*
->
-> The service returns the following response
-> ```json
-> [
->  {
->   "message_id": "The UUID for the relevant request",
->   "status": "OK/Error",
->   "error_code": "Error code, if any error",
->   "error_description": "Error description, if any error"
->  }
-> ]
-> ```
-
-## Database
-We're working with a Postgres database in every environment (local, dev, test, and prod) with the following ER diagram:
-![dpk_db.png not found!](assets/dpk_db.png "ER Diagram")
-
 ## Continuous integration
 
 We use Github Actions as our continuous integration flow, which triggers build and test runs for every PR created and on the main branch.
