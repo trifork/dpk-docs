@@ -46,7 +46,7 @@ We take advantage of the ideas behind [GitOps](https://www.gitops.tech/) for wor
 
 We use Github Actions and have added a workflow for continuous deployment. So when a new release has been created (manually, from Github Releases) of a given repository, it triggers the Github action for build and deployment of the service.
 
-We use Github Container Registry to store the built release images of the services. The images which are built and are available can be viewed from the `Pakcages` site on the repository (found in the right hand side of the Code tab).
+We use Github Container Registry to store the built release images of the services. The images which are built and are available can be viewed from the `Packages` site on the repository (found in the right hand side of the Code tab).
 
 The deployment process is maintained by [flux](https://fluxcd.io/) using helm charts for deployng docker images to Kubernetes.
 
