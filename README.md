@@ -14,7 +14,7 @@ Github repository hosting the setup for the Digital Post Komponent.
   - [Enrollment-Service](https://github.com/trifork/dpk-digital-post) - (Cron/Batch) Service responsible for maintaining Digital Post enrollment lists
   - [Receipt-Service](https://github.com/trifork/dpk-digital-post) - (Cron/Batch) Service responsible for maintaining Digital Post receipts
 - [Common-Submodule](https://github.com/trifork/dpk-common-submodule) - Github submodule containing the datamodel (SQL) and protobuf messages
-- [Flux](https://github.com/trifork/dpk-docs) - TCS dev/test repository
+- [Flux](https://github.com/trifork/dpk-flux/) - TCS test/prod repository
 - [Docker](https://github.com/trifork/dpk-docker) - Repository hosting a docker-compose setup
 - [Test-Data-Generator](https://github.com/trifork/dpk-test-data-generator) - Small service for sending test data
 
