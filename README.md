@@ -21,7 +21,7 @@ Github repository hosting the setup for the Digital Post Komponent.
 ## Technology Used
 * **Git** for source control, and **Github** as source repository
 * **Github Workflow** for continuous integration
-* **Java 21**, **Kotlin 1.9.22** and **Go 1.22** as programming language
+* **Java 25**, **Kotlin 1.9.22** and **Go 1.22** as programming language
 * **Maven** for building the Java/Kotlin services
 * **Makefile** for easy scripting of Go build and run targets
 * **Docker** for containerization
